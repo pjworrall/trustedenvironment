@@ -27,3 +27,58 @@ Tests for UK GOV <a href="https://www.gov.uk/government/publications/identity-pr
 * Was the person doing the check trained in X?
 * Was evidence validated using an authoritative source?
 
+## Querying
+
+The Ontology can be queried against a SPARQL server. One is available at https://fuseki.interition.info/ , dataset OIXTrustedEnvironment.
+
+## Prefix's
+The following prefixing should be used with the SPARQL queries:
+
+~~~~
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
+PREFIX oix: <https://www.openidentityexchange.org/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+~~~~
+
+## Queries
+
+### Was a check supervised by a qualified individual?
+
+~~~~
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
+PREFIX oix: <https://www.openidentityexchange.org/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT  ?supervisorName ?evidenceDescription  WHERE {
+  
+  # get the relationships we want to use from the Ontology
+  # get the relationship(s) known as "hasBiometricInformationCheckedBy"
+  ?hasBiometricInformationCheckedBy rdfs:label 'hasBiometricInformationCheckedBy' .
+  # get the relationship(s) known as 'supervisedBy'.
+  ?supervisedBy rdfs:label 'supervisedBy' .
+  # get the relationship(s) known as 'hasEvidence'
+  ?hasEvidence rdfs:label 'hasEvidence' .
+  
+  # Subject of the test is the claimed identity for Boris Johnson
+  <http://webprotege.stanford.edu/R9gwlbOvPSN884Pt9CnGl7J> ?hasBiometricInformationCheckedBy ?biometricInformationCheck .
+  
+  # who did the check ?
+  ?biometricInformationCheck ?supervisedBy ?supervisor .
+  ?supervisor rdfs:label ?supervisorName .
+  ?supervisor ?hasEvidence ?evidence .
+  
+  ?evidence rdfs:label ?evidenceDescription .
+
+} 
+LIMIT 10
+~~~~
+
+
+
+
