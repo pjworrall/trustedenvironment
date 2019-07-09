@@ -1,0 +1,727 @@
+@prefix : <http://www.openidentityexchange.org/project/CRNTiUCxgGH2IO1XiilisG#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.openidentityexchange.org/project/CRNTiUCxgGH2IO1XiilisG> .
+
+<http://www.openidentityexchange.org/project/CRNTiUCxgGH2IO1XiilisG> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> rdf:type owl:AnnotationProperty .
+
+
+###  https://www.openidentityexchange.org/RBOTKNemzX75QPWdHHFweUM
+<https://www.openidentityexchange.org/RBOTKNemzX75QPWdHHFweUM> rdf:type owl:AnnotationProperty ;
+                                                               <http://purl.org/dc/elements/1.1/description> "A score for the level of confidence you can attribute to an Event or Evidence."^^xsd:string ;
+                                                               rdfs:label "score" ;
+                                                               rdfs:range xsd:integer ;
+                                                               rdfs:domain <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ,
+                                                                           <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R7zj5KTwM863mzaH3mrPmJh
+<http://webprotege.stanford.edu/R7zj5KTwM863mzaH3mrPmJh> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RBB0pyD5ctDrh24DDxtm63G> ,
+                                                                     <http://webprotege.stanford.edu/Rp2IQ2m1vCmnnbbLBt03dp> ,
+                                                                     <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                         rdfs:range <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                         rdfs:label "providesEvent" .
+
+
+###  http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7
+<http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> ;
+                                                         rdfs:range <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                         rdfs:label "hasEvidence" .
+
+
+###  http://webprotege.stanford.edu/ROt23bAOiYvHEBi2WKzJc7
+<http://webprotege.stanford.edu/ROt23bAOiYvHEBi2WKzJc7> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                        rdfs:range <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "A preceding event"^^xsd:string ;
+                                                        rdfs:label "previousEvent"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RgZzJ53zPh9Vrc8mjeJuBq
+<http://webprotege.stanford.edu/RgZzJ53zPh9Vrc8mjeJuBq> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> ;
+                                                        rdfs:label "supportsClaimWith"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/R7WLz1St7dTMqzBH9Fkl9oR
+<https://www.openidentityexchange.org/R7WLz1St7dTMqzBH9Fkl9oR> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               rdfs:domain <https://www.openidentityexchange.org/R75punRBFVUrEP4fFr5aH3Y> ;
+                                                               rdfs:label "hasEthereumAddress"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/R9QG8O3PSQ2uTsXEKCpkOAe
+<https://www.openidentityexchange.org/R9QG8O3PSQ2uTsXEKCpkOAe> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <https://www.openidentityexchange.org/RDwoMZOt01x1RpISO7jg38j> ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               rdfs:range <https://www.openidentityexchange.org/RwFcdefyRqNXlMMw1a5IjJ> ;
+                                                               rdfs:label "hasBiometricInformationCheckedBy"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/R9jqPsoprmD2jW9ubrP0SlA
+<https://www.openidentityexchange.org/R9jqPsoprmD2jW9ubrP0SlA> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               rdfs:range <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "Associates an Individual to an Event and demonstrates a property having meta-data itself using the \"score\" annotation and setting it to an example \"10\". So anything related by this property can infer a score of 10 for evidencing an Event. Caveat - it does not prove the Event as True though."^^xsd:string ;
+                                                               rdfs:label "hasEvent" ;
+                                                               <https://www.openidentityexchange.org/RBOTKNemzX75QPWdHHFweUM> 10 .
+
+
+###  https://www.openidentityexchange.org/RBJUycPE3R4atVM3Osd9KaT
+<https://www.openidentityexchange.org/RBJUycPE3R4atVM3Osd9KaT> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ,
+                                                                           <https://www.openidentityexchange.org/R7riMRH8l51n2Q9fURaIsNg> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "A score for an Event that attests to the validity of an attribute of Identity"^^xsd:string ;
+                                                               rdfs:label "hasScore" .
+
+
+###  https://www.openidentityexchange.org/RBylchKFDL7q1EWF2kLvmdP
+<https://www.openidentityexchange.org/RBylchKFDL7q1EWF2kLvmdP> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An abstract concept for properties representing events"^^xsd:string ;
+                                                               rdfs:label "topEventProperty" .
+
+
+###  https://www.openidentityexchange.org/RC4MbirejqTIdBJYLUewut2
+<https://www.openidentityexchange.org/RC4MbirejqTIdBJYLUewut2> rdf:type owl:ObjectProperty ;
+                                                               rdfs:label "forEvent" .
+
+
+###  https://www.openidentityexchange.org/RCAsp5KCG89Wq9p2XIaugUx
+<https://www.openidentityexchange.org/RCAsp5KCG89Wq9p2XIaugUx> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <https://www.openidentityexchange.org/RBylchKFDL7q1EWF2kLvmdP> ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               rdfs:range <http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "Alternative modelling of Event as a predicate/relationship/property)"^^xsd:string ;
+                                                               rdfs:label "changedAddress"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/RCBbWoURNlBQOSAapUBDo42
+<https://www.openidentityexchange.org/RCBbWoURNlBQOSAapUBDo42> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW> ;
+                                                               rdfs:range <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               rdfs:label "fromAddress"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/RCJDVmOUM5xrEqN0p1EEjmK
+<https://www.openidentityexchange.org/RCJDVmOUM5xrEqN0p1EEjmK> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW> ;
+                                                               rdfs:range <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               rdfs:label "toAddress"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/RColAulYqUGmGH1zRmnpNls
+<https://www.openidentityexchange.org/RColAulYqUGmGH1zRmnpNls> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ,
+                                                                           <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                               rdfs:range <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "Evidence or an Event verified by an authoritative ResourceProvider"^^xsd:string ;
+                                                               rdfs:label "verifiedBy" .
+
+
+###  https://www.openidentityexchange.org/RDcN9BN37VOP6xITraPKsBe
+<https://www.openidentityexchange.org/RDcN9BN37VOP6xITraPKsBe> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf <https://www.openidentityexchange.org/RBylchKFDL7q1EWF2kLvmdP> ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               rdfs:range <http://webprotege.stanford.edu/R8G4zcvmTrEOKmaoHfhAhSW> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An event referring to information about the a change of primary contact mobile phone number providing the old and replacement numbers."^^xsd:string ;
+                                                               rdfs:label "changedPrimaryMobilePhoneContactNumber" .
+
+
+###  https://www.openidentityexchange.org/RDhQGlCeBRSmteLfPcBSMGd
+<https://www.openidentityexchange.org/RDhQGlCeBRSmteLfPcBSMGd> rdf:type owl:ObjectProperty ;
+                                                               rdfs:subPropertyOf owl:topObjectProperty ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                               rdfs:range <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                               rdfs:label "publishedBy"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/RDwoMZOt01x1RpISO7jg38j
+<https://www.openidentityexchange.org/RDwoMZOt01x1RpISO7jg38j> rdf:type owl:ObjectProperty ;
+                                                               rdfs:domain <https://www.openidentityexchange.org/R7sJJSydVE2MuXR3UuaPi98> ;
+                                                               rdfs:range <https://www.openidentityexchange.org/R7l3CEQAPHyxgf44T9KdJG8> ;
+                                                               rdfs:label "supervisedBy" .
+
+
+###  https://www.openidentityexchange.org/Rjc7cJSaEmyIWbbobuu4Qm
+<https://www.openidentityexchange.org/Rjc7cJSaEmyIWbbobuu4Qm> rdf:type owl:ObjectProperty ;
+                                                              rdfs:label "forEvidence" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://www.openidentityexchange.org/R7SUa2xmIslEw7SqZzAlZvi
+<https://www.openidentityexchange.org/R7SUa2xmIslEw7SqZzAlZvi> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:label "fromMobileNumber" .
+
+
+###  https://www.openidentityexchange.org/R7ukeuHTk6dxyliXWgwmAQr
+<https://www.openidentityexchange.org/R7ukeuHTk6dxyliXWgwmAQr> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6> ;
+                                                               rdfs:range xsd:positiveInteger ;
+                                                               <http://purl.org/dc/elements/1.1/description> "A number representing the UK GOV GPG 45 Level of assurance"^^xsd:string ;
+                                                               rdfs:label "hasUKGOVGPG45Level"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/R8Xl5fxSubjez7E0X39xTnX
+<https://www.openidentityexchange.org/R8Xl5fxSubjez7E0X39xTnX> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:label "validFromDate" .
+
+
+###  https://www.openidentityexchange.org/R9Ywvux2ppJw00AZ1ThIP2z
+<https://www.openidentityexchange.org/R9Ywvux2ppJw00AZ1ThIP2z> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:subPropertyOf owl:topDataProperty ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:label "toMobileNumber" .
+
+
+###  https://www.openidentityexchange.org/RPEZ4g4Q2EtkS20gPiB64J
+<https://www.openidentityexchange.org/RPEZ4g4Q2EtkS20gPiB64J> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                              rdfs:range xsd:dateTimeStamp ;
+                                                              rdfs:label "happenedOn" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://webprotege.stanford.edu/R1Y36vawkVoBRJxZMRTlu3
+<http://webprotege.stanford.edu/R1Y36vawkVoBRJxZMRTlu3> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "Defines resource set(s) needed to meet specific requirements . Avoids costs / streamlines journeys by consuming existing resources​. Undertakes “real work” to close any gaps to requirements."^^xsd:string ;
+                                                        rdfs:label "ResourceConsumer" .
+
+
+###  http://webprotege.stanford.edu/R4akxwGyvlQrDfIojdOnCN
+<http://webprotege.stanford.edu/R4akxwGyvlQrDfIojdOnCN> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RZAuTrMU1wLcXEu1OaUmr9> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "Generates trust by authenticating User to a given standard​. Provides utility to User by providing ability to manage distributed data, disclose availability of data and participate in authorisation protocols."^^xsd:string ;
+                                                        rdfs:label "AuthenticationProvider"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7MtodXRgXkctOctsVnd1k
+<http://webprotege.stanford.edu/R7MtodXRgXkctOctsVnd1k> rdf:type owl:Class ;
+                                                        <http://purl.org/dc/elements/1.1/description> "Class of structures to explore answering the landscape anchors to GPG 45."^^xsd:string ;
+                                                        rdfs:label "GPG45IdentityProof"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN
+<http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "Change of circumstances will have a before and after state. See from and to properties."^^xsd:string ;
+                                                         rdfs:label "ChangeOfCircumstance" .
+
+
+###  http://webprotege.stanford.edu/R7Vcy3Q58Lb3ZJvkhkKoJxe
+<http://webprotege.stanford.edu/R7Vcy3Q58Lb3ZJvkhkKoJxe> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6> ;
+                                                         rdfs:label "DriversLicense" .
+
+
+###  http://webprotege.stanford.edu/R7WWD4L7tesPY6n1LXch2nS
+<http://webprotege.stanford.edu/R7WWD4L7tesPY6n1LXch2nS> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> ;
+                                                         rdfs:label "ChangeOfEmail" .
+
+
+###  http://webprotege.stanford.edu/R7saIHzH2MT4cgb23rN7CEr
+<http://webprotege.stanford.edu/R7saIHzH2MT4cgb23rN7CEr> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> ;
+                                                         rdfs:label "ChangeOfPrimaryBankAccount" .
+
+
+###  http://webprotege.stanford.edu/R83D3MMWP52FuMfcQQgNeRh
+<http://webprotege.stanford.edu/R83D3MMWP52FuMfcQQgNeRh> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6> ;
+                                                         rdfs:label "Passport" ;
+                                                         <https://www.openidentityexchange.org/RBOTKNemzX75QPWdHHFweUM> 1 .
+
+
+###  http://webprotege.stanford.edu/R8G4zcvmTrEOKmaoHfhAhSW
+<http://webprotege.stanford.edu/R8G4zcvmTrEOKmaoHfhAhSW> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> ;
+                                                         rdfs:label "ChangeOfMobilePhoneContactNumber" .
+
+
+###  http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe
+<http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> rdf:type owl:Class ;
+                                                         rdfs:label "Evidence" .
+
+
+###  http://webprotege.stanford.edu/RBB0pyD5ctDrh24DDxtm63G
+<http://webprotege.stanford.edu/RBB0pyD5ctDrh24DDxtm63G> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R> ;
+                                                         rdfs:label "EventProvider" .
+
+
+###  http://webprotege.stanford.edu/RBFa8Wt80sCMeZiTGeYfIOF
+<http://webprotege.stanford.edu/RBFa8Wt80sCMeZiTGeYfIOF> rdf:type owl:Class ;
+                                                         <http://purl.org/dc/elements/1.1/description> "Allows users to collect, receive and store (verified) attributes about them​. Publishes attributes into a directory service or shares them with a Resource Consumer."^^xsd:string ;
+                                                         rdfs:label "DataStore" .
+
+
+###  http://webprotege.stanford.edu/RBwf7a4jIUFFK4x95cLg77H
+<http://webprotege.stanford.edu/RBwf7a4jIUFFK4x95cLg77H> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6> ;
+                                                         rdfs:label "FirearmsCertificate" .
+
+
+###  http://webprotege.stanford.edu/RCI6IoyoCbOgrtO5HDeJ5Gl
+<http://webprotege.stanford.edu/RCI6IoyoCbOgrtO5HDeJ5Gl> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                         rdfs:label "DisclosureAndBarringServiceStandardCertificate" .
+
+
+###  http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW
+<http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> ;
+                                                         rdfs:label "ChangeOfAddress" .
+
+
+###  http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR
+<http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> rdf:type owl:Class ;
+                                                         <http://purl.org/dc/elements/1.1/description> "A container, aka a file, with all those references that provide proof for a \"Claimed Identity\"."^^xsd:string ;
+                                                         rdfs:label "ClaimedIdentity"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCbC5pawAxHgKOhO7rUntSM
+<http://webprotege.stanford.edu/RCbC5pawAxHgKOhO7rUntSM> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                         rdfs:label "Death" .
+
+
+###  http://webprotege.stanford.edu/RCocC6TfGK3Gz3KIuh0gQiN
+<http://webprotege.stanford.edu/RCocC6TfGK3Gz3KIuh0gQiN> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "An entity that provides trust services to another entity such as providing an individual with a personal data service that allows them to collect receive and store verified attributes about themselves from an attribute provider and then publish them into a directory service or share them with another entity such as a relying party directly or via an exchange service. No involvement in the specific use of data or access to it themselves"^^xsd:string ;
+                                                         rdfs:label "TrustBroker" .
+
+
+###  http://webprotege.stanford.edu/RCpsGbTJtI0BjNr4b5ey5VW
+<http://webprotege.stanford.edu/RCpsGbTJtI0BjNr4b5ey5VW> rdf:type owl:Class ;
+                                                         <http://purl.org/dc/elements/1.1/description> "A web of trust. A number of independent Events can combine to provide a “Trust Context”."^^xsd:string ;
+                                                         rdfs:label "WebOfTrust" .
+
+
+###  http://webprotege.stanford.edu/RCt2lXfFe09JkBRyTRRCIJz
+<http://webprotege.stanford.edu/RCt2lXfFe09JkBRyTRRCIJz> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "An entity that provides a service of verification, validation and assurance relating to a specific attribute as requested by a relying party. They also publish their capability within a directory service."^^xsd:string ;
+                                                         rdfs:label "CheckingService" .
+
+
+###  http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F
+<http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R> ;
+                                                         rdfs:label "Entity" .
+
+
+###  http://webprotege.stanford.edu/RDRMYmx8c4Tt73NYHZFzzkx
+<http://webprotege.stanford.edu/RDRMYmx8c4Tt73NYHZFzzkx> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ,
+                                                                         <http://webprotege.stanford.edu/RZAuTrMU1wLcXEu1OaUmr9> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "An entity who operates a meta data directory service relating to meta data on specific attributes held by one or more entities which can be accessed by other entities in a range of roles. The meta data covers a range of information about the attribute including the source, the events that underpin the attribute assurance and provides access to a number of means of access including routes and different economic models."^^xsd:string ;
+                                                         rdfs:label "DirectoryService" .
+
+
+###  http://webprotege.stanford.edu/RDiV38WRNC5oLmXaIG4zT8a
+<http://webprotege.stanford.edu/RDiV38WRNC5oLmXaIG4zT8a> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "An entity who provides a means of enabling data exchange between two or more entities based on a range of economic models and service levels. They may publish their capability within a directory service."^^xsd:string ;
+                                                         rdfs:label "ExchangeService" .
+
+
+###  http://webprotege.stanford.edu/RDpBH812LgDZsHmVklZh25Q
+<http://webprotege.stanford.edu/RDpBH812LgDZsHmVklZh25Q> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                         rdfs:label "Organisation" .
+
+
+###  http://webprotege.stanford.edu/RZAuTrMU1wLcXEu1OaUmr9
+<http://webprotege.stanford.edu/RZAuTrMU1wLcXEu1OaUmr9> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "Offers infrastructure services (e.g. registry, directory, orchestration)​. Provides basis for convergence of standards​.  Facilitates authorised exchange (e.g. contracting, accounting, billing)"^^xsd:string ;
+                                                        rdfs:label "TechnologyProvider" .
+
+
+###  http://webprotege.stanford.edu/RczGloY1ne3glshyL5hVfW
+<http://webprotege.stanford.edu/RczGloY1ne3glshyL5hVfW> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R1Y36vawkVoBRJxZMRTlu3> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "A party consuming an Event to help confirm an Identity"^^xsd:string ;
+                                                        rdfs:label "RelyingParty" .
+
+
+###  http://webprotege.stanford.edu/Rn9byAkpVeSb4Rs2mq6Yks
+<http://webprotege.stanford.edu/Rn9byAkpVeSb4Rs2mq6Yks> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RZAuTrMU1wLcXEu1OaUmr9> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "A provider of a register of resource providers and resource consumers. Showing what types of event services are available and what some consumers require."^^xsd:string ;
+                                                        rdfs:label "RegistryService" .
+
+
+###  http://webprotege.stanford.edu/Rp2IQ2m1vCmnnbbLBt03dp
+<http://webprotege.stanford.edu/Rp2IQ2m1vCmnnbbLBt03dp> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ,
+                                                                        <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                        <http://purl.org/dc/elements/1.1/description> "An entity who offers access to a range of attributes in relation to one more situations that could relate to another entity."^^xsd:string ;
+                                                        rdfs:label "AttributeProvider" .
+
+
+###  http://webprotege.stanford.edu/RxBdm7zSMB71cWsuJuYXRD
+<http://webprotege.stanford.edu/RxBdm7zSMB71cWsuJuYXRD> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> ;
+                                                        rdfs:label "ChangeOfPrimaryCreditCard" .
+
+
+###  http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY
+<http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> rdf:type owl:Class ;
+                                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.openidentityexchange.org/RPEZ4g4Q2EtkS20gPiB64J> ;
+                                                                                owl:someValuesFrom xsd:dateTimeStamp
+                                                                              ] ;
+                                                              <http://purl.org/dc/elements/1.1/description> "An process , would involved parties carrying out the process, and result in an assertion of some kind"^^xsd:string ;
+                                                              rdfs:label "Event" .
+
+
+###  http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8
+<http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> rdf:type owl:Class ;
+                                                              <http://purl.org/dc/elements/1.1/description> "A primary contact address (residential?)"^^xsd:string ;
+                                                              rdfs:label "Address" .
+
+
+###  http://www.openidentityexchange.org/R8qJ1as6r3muIzank5puea8
+<http://www.openidentityexchange.org/R8qJ1as6r3muIzank5puea8> rdf:type owl:Class ;
+                                                              rdfs:label "Trust" .
+
+
+###  http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1
+<http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R> ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Undertakes “real work” (e.g. due diligence) that provides assurance​. Stores – and makes accessible – digital resource (e.g. event, status)​. Access to different resource types governed separately​"^^xsd:string ;
+                                                              rdfs:label "ResourceProvider"^^xsd:string .
+
+
+###  http://www.openidentityexchange.org/R9K2DUID0J8IcuGYUbJvSX5
+<http://www.openidentityexchange.org/R9K2DUID0J8IcuGYUbJvSX5> rdf:type owl:Class ;
+                                                              rdfs:label "RiskModel" .
+
+
+###  http://www.openidentityexchange.org/R9VNNbXTn02FFopPlNEMbbq
+<http://www.openidentityexchange.org/R9VNNbXTn02FFopPlNEMbbq> rdf:type owl:Class ;
+                                                              <http://purl.org/dc/elements/1.1/description> "A chain of trust. An event can follow a number of other events. Each preceding event combines to provide a history or a  “lineage”. All the events are directly related or part of the event under consideration."^^xsd:string ;
+                                                              rdfs:label "Chain" .
+
+
+###  http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R
+<http://www.openidentityexchange.org/RBewiZm9rXjku3AiQRRa56R> rdf:type owl:Class ;
+                                                              rdfs:label "Actor" .
+
+
+###  http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO
+<http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                             rdfs:label "Individual" .
+
+
+###  https://www.openidentityexchange.org/R75punRBFVUrEP4fFr5aH3Y
+<https://www.openidentityexchange.org/R75punRBFVUrEP4fFr5aH3Y> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "ZoneOfTrust" .
+
+
+###  https://www.openidentityexchange.org/R79iGopJfCn59bRQAo6YsEk
+<https://www.openidentityexchange.org/R79iGopJfCn59bRQAo6YsEk> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "MarriageCertificate" .
+
+
+###  https://www.openidentityexchange.org/R7H4UfIMY2YMx9tFPigMz5X
+<https://www.openidentityexchange.org/R7H4UfIMY2YMx9tFPigMz5X> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ,
+                                                                               <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                               rdfs:label "Delivery" .
+
+
+###  https://www.openidentityexchange.org/R7l3CEQAPHyxgf44T9KdJG8
+<https://www.openidentityexchange.org/R7l3CEQAPHyxgf44T9KdJG8> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.openidentityexchange.org/RCZYCWdvjew5KX7Sprc2dO> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An individual performing a role in ResourceProvider, AttributeProvider, CheckingService or other Entity that is making an Event available."^^xsd:string ;
+                                                               rdfs:label "Representative" .
+
+
+###  https://www.openidentityexchange.org/R7riMRH8l51n2Q9fURaIsNg
+<https://www.openidentityexchange.org/R7riMRH8l51n2Q9fURaIsNg> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An authoritative act of checking Evidence. Validating and Verifying. Possible with a scoring dimension."^^xsd:string ;
+                                                               rdfs:label "Inspection" .
+
+
+###  https://www.openidentityexchange.org/R7sJJSydVE2MuXR3UuaPi98
+<https://www.openidentityexchange.org/R7sJJSydVE2MuXR3UuaPi98> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R7MtodXRgXkctOctsVnd1k> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "Class to help answer the landscape anchor question “Someone who was trained in […] supervises how the biometric information is captured”"^^xsd:string ;
+                                                               rdfs:label "Biometric" .
+
+
+###  https://www.openidentityexchange.org/R8Hmw5mJ0YE3RocG6ngVznr
+<https://www.openidentityexchange.org/R8Hmw5mJ0YE3RocG6ngVznr> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "BirthCertificate" .
+
+
+###  https://www.openidentityexchange.org/R8eE28glCSyhtYvHkKrPZx2
+<https://www.openidentityexchange.org/R8eE28glCSyhtYvHkKrPZx2> rdf:type owl:Class ;
+                                                               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://www.openidentityexchange.org/RC4MbirejqTIdBJYLUewut2> ;
+                                                                                 owl:someValuesFrom <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY>
+                                                                               ] ,
+                                                                               [ rdf:type owl:Restriction ;
+                                                                                 owl:onProperty <https://www.openidentityexchange.org/Rjc7cJSaEmyIWbbobuu4Qm> ;
+                                                                                 owl:someValuesFrom <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe>
+                                                                               ] ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An explicit record of the revocation or cancellation of an Event, Evidence or other proving construct. We will need this to ensure integrity of the hypothesis"^^xsd:string ;
+                                                               rdfs:label "Revocation" .
+
+
+###  https://www.openidentityexchange.org/R8voxWHIIhsIzNXZ0lxFr0
+<https://www.openidentityexchange.org/R8voxWHIIhsIzNXZ0lxFr0> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                              rdfs:label "AttributeConsumer" .
+
+
+###  https://www.openidentityexchange.org/R9ph6B1u3ymxdYbSyYeoWzR
+<https://www.openidentityexchange.org/R9ph6B1u3ymxdYbSyYeoWzR> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "PowerOfAttorney" .
+
+
+###  https://www.openidentityexchange.org/RBGUeUmTXnCl2jkyVQJNQsT
+<https://www.openidentityexchange.org/RBGUeUmTXnCl2jkyVQJNQsT> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An attribute verifier attests to the validity of an attribute. They probably have some legal accountability and probably expect remuneration and need some insurance."^^xsd:string ;
+                                                               rdfs:label "AttributeVerifier" .
+
+
+###  https://www.openidentityexchange.org/RBP4t9qQuj3nhs4HsVgtB4p
+<https://www.openidentityexchange.org/RBP4t9qQuj3nhs4HsVgtB4p> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "UtilityBill" .
+
+
+###  https://www.openidentityexchange.org/RBUvmu1z6IOsTos1zPTAqmq
+<https://www.openidentityexchange.org/RBUvmu1z6IOsTos1zPTAqmq> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "DeathCertificate" .
+
+
+###  https://www.openidentityexchange.org/RC3b3NSALnacebYu6YxMril
+<https://www.openidentityexchange.org/RC3b3NSALnacebYu6YxMril> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "Evidence that someone is entitled to process an Individuals biometric information"^^xsd:string ;
+                                                               rdfs:label "BiometricProcessingCertificate" .
+
+
+###  https://www.openidentityexchange.org/RC8roUG5oGoQPIYge1NS5wg
+<https://www.openidentityexchange.org/RC8roUG5oGoQPIYge1NS5wg> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                               rdfs:label "GasBoilerService" .
+
+
+###  https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6
+<https://www.openidentityexchange.org/RQZsWVb5pIrq8rpZa5JOR6> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ,
+                                                                              [ rdf:type owl:Restriction ;
+                                                                                owl:onProperty <https://www.openidentityexchange.org/R8Xl5fxSubjez7E0X39xTnX> ;
+                                                                                owl:someValuesFrom xsd:dateTimeStamp
+                                                                              ] ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Evidence of an entitlement or aspect of Identity. An Identity claim would have a number of credentials."^^xsd:string ;
+                                                              rdfs:label "Credential" .
+
+
+###  https://www.openidentityexchange.org/Rn9Ympudt6ClbjMJd34I2n
+<https://www.openidentityexchange.org/Rn9Ympudt6ClbjMJd34I2n> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
+                                                              rdfs:label "GrantOfProbate" .
+
+
+###  https://www.openidentityexchange.org/RwFcdefyRqNXlMMw1a5IjJ
+<https://www.openidentityexchange.org/RwFcdefyRqNXlMMw1a5IjJ> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                              <http://purl.org/dc/elements/1.1/description> "For use with landscape GPG45 anchor examples"^^xsd:string ;
+                                                              rdfs:label "BiometricInformationCheck" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://webprotege.stanford.edu/R9gwlbOvPSN884Pt9CnGl7J
+<http://webprotege.stanford.edu/R9gwlbOvPSN884Pt9CnGl7J> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> ;
+                                                         <http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7> <http://webprotege.stanford.edu/RCoGSg1W6Xizew3rgc4NlI0> ,
+                                                                                                                  <https://www.openidentityexchange.org/R8qexHzCJ9YyUAO8pCE8fz9> ,
+                                                                                                                  <https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt> ;
+                                                         <https://www.openidentityexchange.org/R9QG8O3PSQ2uTsXEKCpkOAe> <https://www.openidentityexchange.org/R8AEAN0FXZXoxVRYJW9iy9v> ;
+                                                         <https://www.openidentityexchange.org/R9jqPsoprmD2jW9ubrP0SlA> <https://www.openidentityexchange.org/RC9afloKXDO86BYJPspHAvJ> ,
+                                                                                                                        <https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt> ;
+                                                         <https://www.openidentityexchange.org/RCAsp5KCG89Wq9p2XIaugUx> <https://www.openidentityexchange.org/RC9afloKXDO86BYJPspHAvJ> ;
+                                                         <https://www.openidentityexchange.org/RDcN9BN37VOP6xITraPKsBe> <https://www.openidentityexchange.org/RCeMsqGpkXVjce0sPr8DMpD> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "A bundle of relationships to artifacts that a decision on whether this ClaimedIdentity is valid or not can be made."^^xsd:string ;
+                                                         rdfs:label "A person claiming to be Boris Johnson"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBLfZAQ2KcdyugUc2IV3ngf
+<http://webprotege.stanford.edu/RBLfZAQ2KcdyugUc2IV3ngf> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RCocC6TfGK3Gz3KIuh0gQiN> ;
+                                                         <http://purl.org/dc/elements/1.1/description> "Purely an example to explore if a Social Linked Data (Solid) Pod service providers would be considered a Trust Broker."^^xsd:string ;
+                                                         rdfs:label "The Trust Broker Interition"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCfPXWuQKThV4woH2lmdx64
+<http://webprotege.stanford.edu/RCfPXWuQKThV4woH2lmdx64> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/RCocC6TfGK3Gz3KIuh0gQiN> ;
+                                                         rdfs:label "The Trust Broker MyDex CIC"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCoGSg1W6Xizew3rgc4NlI0
+<http://webprotege.stanford.edu/RCoGSg1W6Xizew3rgc4NlI0> rdf:type owl:NamedIndividual ,
+                                                                  <http://webprotege.stanford.edu/R83D3MMWP52FuMfcQQgNeRh> ;
+                                                         rdfs:label "Passport numbered 3837493839"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RwzWhH1zbxIofmYPLMwOtV
+<http://webprotege.stanford.edu/RwzWhH1zbxIofmYPLMwOtV> rdf:type owl:NamedIndividual ,
+                                                                 <http://webprotege.stanford.edu/RBB0pyD5ctDrh24DDxtm63G> ,
+                                                                 [ rdf:type owl:Restriction ;
+                                                                   owl:onProperty <http://webprotege.stanford.edu/R7zj5KTwM863mzaH3mrPmJh> ;
+                                                                   owl:someValuesFrom <http://webprotege.stanford.edu/R7MtodXRgXkctOctsVnd1k>
+                                                                 ] ;
+                                                        rdfs:label "HSBC" .
+
+
+###  https://www.openidentityexchange.org/R7YRuEfxdo4x7orh3h88WSk
+<https://www.openidentityexchange.org/R7YRuEfxdo4x7orh3h88WSk> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An example of a organisation that may provide evidence of Address"^^xsd:string ;
+                                                               rdfs:label "Amazon UK Ltd" .
+
+
+###  https://www.openidentityexchange.org/R7b97sCPFdhRhEje7YqvuSA
+<https://www.openidentityexchange.org/R7b97sCPFdhRhEje7YqvuSA> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                               rdfs:label "Vodafone" .
+
+
+###  https://www.openidentityexchange.org/R8AEAN0FXZXoxVRYJW9iy9v
+<https://www.openidentityexchange.org/R8AEAN0FXZXoxVRYJW9iy9v> rdf:type owl:NamedIndividual ,
+                                                                        <https://www.openidentityexchange.org/RwFcdefyRqNXlMMw1a5IjJ> ;
+                                                               <https://www.openidentityexchange.org/RDwoMZOt01x1RpISO7jg38j> <https://www.openidentityexchange.org/RZgRzWz1IuFAUxANrCi6KM> ;
+                                                               <https://www.openidentityexchange.org/RPEZ4g4Q2EtkS20gPiB64J> "2019-04-12T13:20:00Z"^^xsd:dateTime ;
+                                                               rdfs:label "Biometric Check of a Claim to be Boris Johnson" .
+
+
+###  https://www.openidentityexchange.org/R8R3lHf4E1qW6ylJL56xlPc
+<https://www.openidentityexchange.org/R8R3lHf4E1qW6ylJL56xlPc> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "Example address"^^xsd:string ;
+                                                               rdfs:label """c/o Bulgaria Coburg
+""" .
+
+
+###  https://www.openidentityexchange.org/R8qexHzCJ9YyUAO8pCE8fz9
+<https://www.openidentityexchange.org/R8qexHzCJ9YyUAO8pCE8fz9> rdf:type owl:NamedIndividual ,
+                                                                        <http://webprotege.stanford.edu/R7Vcy3Q58Lb3ZJvkhkKoJxe> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "A mock drivers license record for Boris Johnson"^^xsd:string ;
+                                                               rdfs:label "JOHNS712137PJ8EM"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/R9lp8ui6xRGRL1enrxJCgV2
+<https://www.openidentityexchange.org/R9lp8ui6xRGRL1enrxJCgV2> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An example of an address. This would refer to a set of Attributes using an existing Ontology standard like FOAF"^^xsd:string ;
+                                                               rdfs:label "10 Downing Street" .
+
+
+###  https://www.openidentityexchange.org/RC9afloKXDO86BYJPspHAvJ
+<https://www.openidentityexchange.org/RC9afloKXDO86BYJPspHAvJ> rdf:type owl:NamedIndividual ,
+                                                                        <http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW> ;
+                                                               <https://www.openidentityexchange.org/RCBbWoURNlBQOSAapUBDo42> <https://www.openidentityexchange.org/R9lp8ui6xRGRL1enrxJCgV2> ;
+                                                               <https://www.openidentityexchange.org/RCJDVmOUM5xrEqN0p1EEjmK> <https://www.openidentityexchange.org/R8R3lHf4E1qW6ylJL56xlPc> ;
+                                                               <https://www.openidentityexchange.org/RDhQGlCeBRSmteLfPcBSMGd> <https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo> ;
+                                                               rdfs:label "Move residence from 10 Downing Street to c/o Bulgaria Coburg"^^xsd:string .
+
+
+###  https://www.openidentityexchange.org/RCBTE2N5rKLPkS6JMnjjm6k
+<https://www.openidentityexchange.org/RCBTE2N5rKLPkS6JMnjjm6k> rdf:type owl:NamedIndividual ,
+                                                                        <https://www.openidentityexchange.org/RC3b3NSALnacebYu6YxMril> ;
+                                                               <https://www.openidentityexchange.org/R8Xl5fxSubjez7E0X39xTnX> "2019-04-12T12:00:00Z"^^xsd:dateTime ;
+                                                               rdfs:label "Biometric Processing Certificate Award to Jo Bloggs" .
+
+
+###  https://www.openidentityexchange.org/RCeMsqGpkXVjce0sPr8DMpD
+<https://www.openidentityexchange.org/RCeMsqGpkXVjce0sPr8DMpD> rdf:type owl:NamedIndividual ,
+                                                                        <http://webprotege.stanford.edu/R8G4zcvmTrEOKmaoHfhAhSW> ;
+                                                               <https://www.openidentityexchange.org/RDhQGlCeBRSmteLfPcBSMGd> <https://www.openidentityexchange.org/R7b97sCPFdhRhEje7YqvuSA> ;
+                                                               <https://www.openidentityexchange.org/R7SUa2xmIslEw7SqZzAlZvi> 123 ;
+                                                               <https://www.openidentityexchange.org/R9Ywvux2ppJw00AZ1ThIP2z> 456 ;
+                                                               rdfs:label "Changed primary contact mobile number from 123 to 456" .
+
+
+###  https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo
+<https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo> rdf:type owl:NamedIndividual ,
+                                                                        <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
+                                                               rdfs:label "HSBC Bank" .
+
+
+###  https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt
+<https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt> rdf:type owl:NamedIndividual ,
+                                                                       <https://www.openidentityexchange.org/R7H4UfIMY2YMx9tFPigMz5X> ;
+                                                              <https://www.openidentityexchange.org/RDhQGlCeBRSmteLfPcBSMGd> <https://www.openidentityexchange.org/R7YRuEfxdo4x7orh3h88WSk> ;
+                                                              <http://purl.org/dc/elements/1.1/description> "An mock delivery record from Amazon."^^xsd:string ;
+                                                              rdfs:label "202-7609974-4132305" .
+
+
+###  https://www.openidentityexchange.org/RZgRzWz1IuFAUxANrCi6KM
+<https://www.openidentityexchange.org/RZgRzWz1IuFAUxANrCi6KM> rdf:type owl:NamedIndividual ,
+                                                                       <https://www.openidentityexchange.org/R7l3CEQAPHyxgf44T9KdJG8> ;
+                                                              <http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7> <https://www.openidentityexchange.org/RCBTE2N5rKLPkS6JMnjjm6k> ;
+                                                              <http://purl.org/dc/elements/1.1/description> "This is an Individual acting as a representative of an ResourceProvider that has evidence that they are qualified to process biometic information in validating a claimed Identity"^^xsd:string ;
+                                                              rdfs:label "Jo Bloggs" .
+
+
+###  https://www.openidentityexchange.org/RvYqxidG5psZvSy2Zoa9iH
+<https://www.openidentityexchange.org/RvYqxidG5psZvSy2Zoa9iH> rdf:type owl:NamedIndividual ,
+                                                                       <http://webprotege.stanford.edu/RCocC6TfGK3Gz3KIuh0gQiN> ;
+                                                              <http://purl.org/dc/elements/1.1/description> "Would Zonafide be a Trust Broker? Zonafide uses a DLT to ensure that parties are who they are, proves facts relate to them and uses a digital asset as an economic incentive for them to provide trust services between each other."^^xsd:string ;
+                                                              rdfs:label "The Trust Broker Zonafide" .
+
+
+###  Generated by the OWL API (version 4.5.10) https://github.com/owlcs/owlapi
