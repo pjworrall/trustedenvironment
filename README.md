@@ -79,6 +79,36 @@ SELECT  ?supervisorName ?evidenceDescription  WHERE {
 LIMIT 10
 ~~~~
 
+## Other Queries
+
+### Get @3C Verifiable Credential
+
+~~~~
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
+PREFIX oix: <https://www.openidentityexchange.org/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT  ?evidence ?evidenceLabel ?VerifiableCredentialType  WHERE {
+  
+  # get the relationships we want to use from the Ontology
+  # get the relationship(s) known as 'hasEvidence'
+  ?hasEvidence rdfs:label 'hasEvidence' .
+  ?VerifiableCredentialType rdfs:label 'AlumniCredential' .
+  
+  # Subject of the test is the claimed identity for Boris Johnson
+  <http://webprotege.stanford.edu/R9gwlbOvPSN884Pt9CnGl7J> ?hasEvidence ?evidence .
+
+  # Get the evidence of type AlumniCredential
+  ?evidence rdf:type ?VerifiableCredentialType .
+  
+  ?evidence rdfs:label ?evidenceLabel
+} 
+LIMIT 10
+
+~~~~
 
 
 
