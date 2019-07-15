@@ -709,6 +709,7 @@
 <http://webprotege.stanford.edu/R9gwlbOvPSN884Pt9CnGl7J> rdf:type owl:NamedIndividual ,
                                                                   <http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> ;
                                                          <http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7> <http://webprotege.stanford.edu/RCoGSg1W6Xizew3rgc4NlI0> ,
+                                                                                                                  <https://www.openidentityexchange.org/R7dJcHmm3FhvLNQ0WvjjhFY> ,
                                                                                                                   <https://www.openidentityexchange.org/R8qexHzCJ9YyUAO8pCE8fz9> ,
                                                                                                                   <https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt> ;
                                                          <https://www.openidentityexchange.org/R9QG8O3PSQ2uTsXEKCpkOAe> <https://www.openidentityexchange.org/R8AEAN0FXZXoxVRYJW9iy9v> ;
@@ -820,7 +821,6 @@
                                                                         <https://www.openidentityexchange.org/R7ubhx7dHVfNHOZfgMbodon> ;
                                                                <https://www.openidentityexchange.org/R8LPN3IBYmcuxbkiRQPYhQS> "Balliol College, Oxford University"^^xsd:string ;
                                                                <https://www.openidentityexchange.org/Rsehngv0ZvAjZd2Y4J1C5y> "did:example:c276e12ec21ebfeb1f712ebc6f1"^^xsd:string ;
-                                                               <http://purl.org/dc/elements/1.1/description> "Balliol College, Oxford University"^^xsd:string ;
                                                                rdfs:label "Boris Johnson's Humanities Degree"^^xsd:string .
 
 
