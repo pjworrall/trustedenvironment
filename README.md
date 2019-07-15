@@ -81,7 +81,7 @@ LIMIT 10
 
 ## Other Queries
 
-### Get @3C Verifiable Credential
+### Get W3C Verifiable Credential
 
 ~~~~
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
