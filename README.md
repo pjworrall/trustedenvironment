@@ -48,12 +48,6 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 ### Was a check supervised by a qualified individual?
 
 ~~~~
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
-PREFIX oix: <https://www.openidentityexchange.org/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 SELECT  ?supervisorName ?evidenceDescription  WHERE {
   
@@ -84,12 +78,6 @@ LIMIT 10
 ### Get W3C Verifiable Credential
 
 ~~~~
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
-PREFIX oix: <https://www.openidentityexchange.org/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 SELECT  ?evidence ?evidenceLabel ?VerifiableCredentialType  WHERE {
   
@@ -113,13 +101,6 @@ LIMIT 10
 ### Get the W3C Verifiable Credential Id and Issuance Date 
 
 ~~~~
-
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
-PREFIX oix: <https://www.openidentityexchange.org/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 SELECT ?evidenceLabel ?subjectLabel ?id ?issuanceDate   WHERE {
   
@@ -146,6 +127,44 @@ SELECT ?evidenceLabel ?subjectLabel ?id ?issuanceDate   WHERE {
   ?subject rdfs:label ?subjectLabel .
   
   ?evidence rdfs:label ?evidenceLabel
+} 
+LIMIT 10
+
+~~~~
+
+### Add Name of Credential Issuer
+
+~~~~
+
+SELECT ?evidenceLabel ?subjectLabel ?issuerLabel ?id ?issuanceDate   WHERE {
+  
+  # get any types we want to use
+  ?VerifiableCredentialType rdfs:label 'AlumniCredential' .
+  
+  # get the relationships we want to use from the Ontology
+  # get the relationship(s) known as 'hasEvidence'
+  ?hasEvidence rdfs:label 'hasEvidence' .
+  ?credentialSubject rdfs:label 'credentialSubject' .
+  ?hasId rdfs:label 'id' .
+  ?hasIssuanceDate rdfs:label 'issuanceDate' .
+  ?hasIssuer rdfs:label 'issuer' .
+  
+  # Subject of the test is the claimed identity for Boris Johnson
+  <http://webprotege.stanford.edu/R9gwlbOvPSN884Pt9CnGl7J> ?hasEvidence ?evidence .
+
+  # Get the evidence of type AlumniCredential
+  ?evidence rdf:type ?VerifiableCredentialType .
+  
+  ?evidence ?credentialSubject ?subject ; 
+  			?hasId ?id ;
+     		?hasIssuanceDate ?issuanceDate ;
+       		?hasIssuer ?issuer .
+  
+  ?subject rdfs:label ?subjectLabel .
+  
+  ?evidence rdfs:label ?evidenceLabel.
+  
+  ?issuer rdfs:label ?issuerLabel .
 } 
 LIMIT 10
 
