@@ -41,7 +41,8 @@
 ###  http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7
 <http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7> rdf:type owl:ObjectProperty ;
                                                          rdfs:subPropertyOf owl:topObjectProperty ;
-                                                         rdfs:domain <http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR> ,
+                                                                     <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
                                                          rdfs:range <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
                                                          rdfs:label "hasEvidence" .
 
@@ -96,7 +97,8 @@
 
 ###  https://www.openidentityexchange.org/RB6rBGeEIHAeDvaDgN79gkQ
 <https://www.openidentityexchange.org/RB6rBGeEIHAeDvaDgN79gkQ> rdf:type owl:ObjectProperty ;
-                                                               rdfs:domain <https://www.openidentityexchange.org/R9bwuOZB7P7OcpCmaFvutuR> ;
+                                                               rdfs:domain <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ,
+                                                                           <https://www.openidentityexchange.org/R9bwuOZB7P7OcpCmaFvutuR> ;
                                                                rdfs:range <https://www.openidentityexchange.org/RDL5RelhU3EUDX17Fhmcycl> ;
                                                                rdfs:label "proof" .
 
@@ -694,6 +696,12 @@
                                                               rdfs:label "GrantOfProbate" .
 
 
+###  https://www.openidentityexchange.org/RtrVvajmJDMmxcscWrwzfL
+<https://www.openidentityexchange.org/RtrVvajmJDMmxcscWrwzfL> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
+                                                              rdfs:label "HigherEducationCertificateCheck" .
+
+
 ###  https://www.openidentityexchange.org/RwFcdefyRqNXlMMw1a5IjJ
 <https://www.openidentityexchange.org/RwFcdefyRqNXlMMw1a5IjJ> rdf:type owl:Class ;
                                                               rdfs:subClassOf <http://www.openidentityexchange.org/R73PfvPZp5DpMVea604lhtY> ;
@@ -714,6 +722,7 @@
                                                                                                                   <https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt> ;
                                                          <https://www.openidentityexchange.org/R9QG8O3PSQ2uTsXEKCpkOAe> <https://www.openidentityexchange.org/R8AEAN0FXZXoxVRYJW9iy9v> ;
                                                          <https://www.openidentityexchange.org/R9jqPsoprmD2jW9ubrP0SlA> <https://www.openidentityexchange.org/RC9afloKXDO86BYJPspHAvJ> ,
+                                                                                                                        <https://www.openidentityexchange.org/RDVPalBVjOOF9xBT6XgVbLQ> ,
                                                                                                                         <https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt> ;
                                                          <https://www.openidentityexchange.org/RCAsp5KCG89Wq9p2XIaugUx> <https://www.openidentityexchange.org/RC9afloKXDO86BYJPspHAvJ> ;
                                                          <https://www.openidentityexchange.org/RDcN9BN37VOP6xITraPKsBe> <https://www.openidentityexchange.org/RCeMsqGpkXVjce0sPr8DMpD> ;
@@ -807,7 +816,6 @@
 ###  https://www.openidentityexchange.org/R9p013PFKqPeKX8LgTy8dR1
 <https://www.openidentityexchange.org/R9p013PFKqPeKX8LgTy8dR1> rdf:type owl:NamedIndividual ,
                                                                         <https://www.openidentityexchange.org/RDL5RelhU3EUDX17Fhmcycl> ;
-                                                               <https://www.openidentityexchange.org/RB6rBGeEIHAeDvaDgN79gkQ> <https://www.openidentityexchange.org/RBbEDJUhpJIPs14AAtvr2Pl> ;
                                                                <https://www.openidentityexchange.org/RBnAbVauCDq91wkt4Sjzu14> <https://www.openidentityexchange.org/RBbEDJUhpJIPs14AAtvr2Pl> ;
                                                                <https://www.openidentityexchange.org/RB4kfLgr31KdyDEKydUEevN> "2017-06-18T21:19:10Z"^^xsd:dateTime ;
                                                                <https://www.openidentityexchange.org/RCFnmUNFOhYK4feBLrikfX2> "https://example.edu/issuers/keys/1"^^xsd:string ;
@@ -849,10 +857,31 @@
                                                                rdfs:label "Changed primary contact mobile number from 123 to 456" .
 
 
+###  https://www.openidentityexchange.org/RCwq7Ew8GFyqXrPl9JYu6BG
+<https://www.openidentityexchange.org/RCwq7Ew8GFyqXrPl9JYu6BG> rdf:type owl:NamedIndividual ,
+                                                                        <https://www.openidentityexchange.org/RDL5RelhU3EUDX17Fhmcycl> ;
+                                                               <https://www.openidentityexchange.org/RBnAbVauCDq91wkt4Sjzu14> <https://www.openidentityexchange.org/R7dJcHmm3FhvLNQ0WvjjhFY> ;
+                                                               <https://www.openidentityexchange.org/RB4kfLgr31KdyDEKydUEevN> "2017-01-01T21:00:10Z"^^xsd:dateTime ;
+                                                               <https://www.openidentityexchange.org/RCFnmUNFOhYK4feBLrikfX2> "https://www.hsbc.com/oix/events/cdd/keys/1"^^xsd:string ;
+                                                               <https://www.openidentityexchange.org/RDTNqJlJTs1Kuoj4BBa6LxT> "eyJhbGciOiJSUzI1NiIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..TCYt5XsITJX1CxPCT8yAV-TVkIEq_PbChOMqsLfRoPsnsgw5WEuts01mq-pQy7UJiN5mgRxD-WUcX16dUEMGlv50aqzpqh4Qktb3rk-BuQy72IFLOqV0G_zS245-kronKb78cPN25DGlcTwLtjPAYuNzVBAh4vGHSrQyHUdBBPM"^^xsd:string ;
+                                                               <https://www.openidentityexchange.org/Re49XyXU9WBkeUj2QgW8zb> "assertionMethod"^^xsd:string ;
+                                                               rdfs:label "Proof of Boris Johnson's Higher Education Certificate Check by HSBC"^^xsd:string .
+
+
 ###  https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo
 <https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo> rdf:type owl:NamedIndividual ,
                                                                         <http://www.openidentityexchange.org/R8uEta2OeeOuTMG8BttO2Y1> ;
                                                                rdfs:label "HSBC Bank" .
+
+
+###  https://www.openidentityexchange.org/RDVPalBVjOOF9xBT6XgVbLQ
+<https://www.openidentityexchange.org/RDVPalBVjOOF9xBT6XgVbLQ> rdf:type owl:NamedIndividual ,
+                                                                        <https://www.openidentityexchange.org/RtrVvajmJDMmxcscWrwzfL> ;
+                                                               <http://webprotege.stanford.edu/RDBnjd7UBrazrhAHPFo6JK7> <https://www.openidentityexchange.org/R7dJcHmm3FhvLNQ0WvjjhFY> ;
+                                                               <https://www.openidentityexchange.org/RB6rBGeEIHAeDvaDgN79gkQ> <https://www.openidentityexchange.org/RCwq7Ew8GFyqXrPl9JYu6BG> ;
+                                                               <https://www.openidentityexchange.org/RColAulYqUGmGH1zRmnpNls> <https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo> ;
+                                                               <https://www.openidentityexchange.org/RPEZ4g4Q2EtkS20gPiB64J> "2019-10-24T05:33:31Z"^^xsd:dateTime ;
+                                                               rdfs:label "A check of Boris Johnsons Higher Education Certificate" .
 
 
 ###  https://www.openidentityexchange.org/RN4eWnXTnYLSt9kLNPveXt
