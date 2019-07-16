@@ -72,10 +72,6 @@ SELECT  ?supervisorName ?evidenceDescription  WHERE {
 } 
 LIMIT 10
 ~~~~
-### TODO
-~~~~
-% curl <example of running query from command line>
-~~~~
 
 ## Other Queries
 
