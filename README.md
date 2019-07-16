@@ -134,7 +134,7 @@ SELECT ?evidenceLabel ?subjectLabel ?id ?issuanceDate   WHERE {
 LIMIT 10
 
 ~~~~
-
+<a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=SELECT%20%3FevidenceLabel%20%3FsubjectLabel%20%3Fid%20%3FissuanceDate%20%20%20WHERE%20%7B%0A%20%20%0A%20%20%23%20get%20any%20types%20we%20want%20to%20use%0A%20%20%3FVerifiableCredentialType%20rdfs%3Alabel%20%27AlumniCredential%27%20.%0A%20%20%0A%20%20%23%20get%20the%20relationships%20we%20want%20to%20use%20from%20the%20Ontology%0A%20%20%23%20get%20the%20relationship%28s%29%20known%20as%20%27hasEvidence%27%0A%20%20%3FhasEvidence%20rdfs%3Alabel%20%27hasEvidence%27%20.%0A%20%20%3FcredentialSubject%20rdfs%3Alabel%20%27credentialSubject%27%20.%0A%20%20%3FhasId%20rdfs%3Alabel%20%27id%27%20.%0A%20%20%3FhasIssuanceDate%20rdfs%3Alabel%20%27issuanceDate%27%20.%0A%20%20%0A%20%20%23%20Subject%20of%20the%20test%20is%20the%20claimed%20identity%20for%20Boris%20Johnson%0A%20%20%3Chttp%3A%2F%2Fwebprotege.stanford.edu%2FR9gwlbOvPSN884Pt9CnGl7J%3E%20%3FhasEvidence%20%3Fevidence%20.%0A%0A%20%20%23%20Get%20the%20evidence%20of%20type%20AlumniCredential%0A%20%20%3Fevidence%20rdf%3Atype%20%3FVerifiableCredentialType%20.%0A%20%20%0A%20%20%3Fevidence%20%3FcredentialSubject%20%3Fsubject%20%3B%20%0A%20%20%09%09%09%3FhasId%20%3Fid%20%3B%0A%20%20%20%20%20%09%09%3FhasIssuanceDate%20%3FissuanceDate%20.%0A%20%20%0A%20%20%3Fsubject%20rdfs%3Alabel%20%3FsubjectLabel%20.%0A%20%20%0A%20%20%3Fevidence%20rdfs%3Alabel%20%3FevidenceLabel%0A%7D%20%0ALIMIT%2010"> Execute Query</a>
 ### Get the W3C Verifiable Credential Id, Issuance Date and Name of Credential Issuer
 
 ~~~~
@@ -172,7 +172,7 @@ SELECT ?evidenceLabel ?subjectLabel ?issuerLabel ?id ?issuanceDate   WHERE {
 LIMIT 10
 
 ~~~~
-
+<a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=SELECT%20%3FevidenceLabel%20%3FsubjectLabel%20%3FissuerLabel%20%3Fid%20%3FissuanceDate%20%20%20WHERE%20%7B%0A%20%20%0A%20%20%23%20get%20any%20types%20we%20want%20to%20use%0A%20%20%3FVerifiableCredentialType%20rdfs%3Alabel%20%27AlumniCredential%27%20.%0A%20%20%0A%20%20%23%20get%20the%20relationships%20we%20want%20to%20use%20from%20the%20Ontology%0A%20%20%23%20get%20the%20relationship%28s%29%20known%20as%20%27hasEvidence%27%0A%20%20%3FhasEvidence%20rdfs%3Alabel%20%27hasEvidence%27%20.%0A%20%20%3FcredentialSubject%20rdfs%3Alabel%20%27credentialSubject%27%20.%0A%20%20%3FhasId%20rdfs%3Alabel%20%27id%27%20.%0A%20%20%3FhasIssuanceDate%20rdfs%3Alabel%20%27issuanceDate%27%20.%0A%20%20%3FhasIssuer%20rdfs%3Alabel%20%27issuer%27%20.%0A%20%20%0A%20%20%23%20Subject%20of%20the%20test%20is%20the%20claimed%20identity%20for%20Boris%20Johnson%0A%20%20%3Chttp%3A%2F%2Fwebprotege.stanford.edu%2FR9gwlbOvPSN884Pt9CnGl7J%3E%20%3FhasEvidence%20%3Fevidence%20.%0A%0A%20%20%23%20Get%20the%20evidence%20of%20type%20AlumniCredential%0A%20%20%3Fevidence%20rdf%3Atype%20%3FVerifiableCredentialType%20.%0A%20%20%0A%20%20%3Fevidence%20%3FcredentialSubject%20%3Fsubject%20%3B%20%0A%20%20%09%09%09%3FhasId%20%3Fid%20%3B%0A%20%20%20%20%20%09%09%3FhasIssuanceDate%20%3FissuanceDate%20%3B%0A%20%20%20%20%20%20%20%09%09%3FhasIssuer%20%3Fissuer%20.%0A%20%20%0A%20%20%3Fsubject%20rdfs%3Alabel%20%3FsubjectLabel%20.%0A%20%20%0A%20%20%3Fevidence%20rdfs%3Alabel%20%3FevidenceLabel.%0A%20%20%0A%20%20%3Fissuer%20rdfs%3Alabel%20%3FissuerLabel%20.%0A%7D%20%0ALIMIT%2010"> Execute Query</a>
 ## Querying Events
 
 ### Inspect an Event published by a Resource Provider that Checked a Higher Education Certificate
@@ -196,7 +196,7 @@ SELECT ?eventLabel ?pLabel  ?oLabel  WHERE {
 LIMIT 10
 
 ~~~~
-
+<a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20mdmp%3A%20%3Chttps%3A%2F%2Fontology.openidentityexchange.org%2Friskmodel%23%3E%0APREFIX%20oix%3A%20%3Chttps%3A%2F%2Fwww.openidentityexchange.org%2F%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0A%0A%0A%0ASELECT%20%3FeventLabel%20%3FpLabel%20%20%3FoLabel%20%20WHERE%20%7B%0A%20%20%0A%20%20%23%20a%20known%20check%20event%2C%20a%20URI%20shared%20by%20the%20Claiment%20in%20a%20Self-Sovereign%20solution%0A%20%20%23%20note%3A%20the%20Claiments%20ownership%20of%20the%20%0A%20%20%0A%20%20%3Chttps%3A%2F%2Fwww.openidentityexchange.org%2FRDVPalBVjOOF9xBT6XgVbLQ%3E%20%3Fp%20%3Fo%20%3B%20rdfs%3Alabel%20%3FeventLabel%20.%0A%0A%20%20%3Fo%20rdfs%3Alabel%20%3FoLabel%20.%0A%20%20%3Fp%20rdfs%3Alabel%20%3FpLabel%20.%0A%20%20%0A%20%20%23%20then%20where%20the%20property%20is%20refering%20to%20a%20Proof%20proceed%20to%20validate%20it...%0A%7D%20%0ALIMIT%2010"> Execute Query</a>
 ## Validating the Proofs
 
 ### W3C Verifiable Credential
