@@ -175,6 +175,12 @@ LIMIT 10
 <a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=SELECT%20%3FevidenceLabel%20%3FsubjectLabel%20%3FissuerLabel%20%3Fid%20%3FissuanceDate%20%20%20WHERE%20%7B%0A%20%20%0A%20%20%23%20get%20any%20types%20we%20want%20to%20use%0A%20%20%3FVerifiableCredentialType%20rdfs%3Alabel%20%27AlumniCredential%27%20.%0A%20%20%0A%20%20%23%20get%20the%20relationships%20we%20want%20to%20use%20from%20the%20Ontology%0A%20%20%23%20get%20the%20relationship%28s%29%20known%20as%20%27hasEvidence%27%0A%20%20%3FhasEvidence%20rdfs%3Alabel%20%27hasEvidence%27%20.%0A%20%20%3FcredentialSubject%20rdfs%3Alabel%20%27credentialSubject%27%20.%0A%20%20%3FhasId%20rdfs%3Alabel%20%27id%27%20.%0A%20%20%3FhasIssuanceDate%20rdfs%3Alabel%20%27issuanceDate%27%20.%0A%20%20%3FhasIssuer%20rdfs%3Alabel%20%27issuer%27%20.%0A%20%20%0A%20%20%23%20Subject%20of%20the%20test%20is%20the%20claimed%20identity%20for%20Boris%20Johnson%0A%20%20%3Chttp%3A%2F%2Fwebprotege.stanford.edu%2FR9gwlbOvPSN884Pt9CnGl7J%3E%20%3FhasEvidence%20%3Fevidence%20.%0A%0A%20%20%23%20Get%20the%20evidence%20of%20type%20AlumniCredential%0A%20%20%3Fevidence%20rdf%3Atype%20%3FVerifiableCredentialType%20.%0A%20%20%0A%20%20%3Fevidence%20%3FcredentialSubject%20%3Fsubject%20%3B%20%0A%20%20%09%09%09%3FhasId%20%3Fid%20%3B%0A%20%20%20%20%20%09%09%3FhasIssuanceDate%20%3FissuanceDate%20%3B%0A%20%20%20%20%20%20%20%09%09%3FhasIssuer%20%3Fissuer%20.%0A%20%20%0A%20%20%3Fsubject%20rdfs%3Alabel%20%3FsubjectLabel%20.%0A%20%20%0A%20%20%3Fevidence%20rdfs%3Alabel%20%3FevidenceLabel.%0A%20%20%0A%20%20%3Fissuer%20rdfs%3Alabel%20%3FissuerLabel%20.%0A%7D%20%0ALIMIT%2010"> Execute Query</a>
 ## Querying Events
 
+### Find all the Events that Coroberate a Change Of Address (Use Case Subject for Project Outcome)
+
+~~~~
+
+~~~~
+
 ### Inspect an Event published by a Resource Provider that Checked a Higher Education Certificate
 
 We would like to know who the Resource Provider was, when the check was done and the signature to verify the event was published by the Resource Provider.
