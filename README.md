@@ -72,6 +72,10 @@ SELECT  ?supervisorName ?evidenceDescription  WHERE {
 } 
 LIMIT 10
 ~~~~
+### TODO
+~~~~
+% curl <example of running query from command line>
+~~~~
 
 ## Other Queries
 
@@ -178,6 +182,32 @@ We would like to know who the Resource Provider was, when the check was done and
 
 ~~~~
 
+SELECT ?eventLabel ?pLabel  ?oLabel  WHERE {
+  
+  # a known check event, a URI shared by the Claiment in a Self-Sovereign solution
+  # note: the Claiments ownership of the 
+  
+  <https://www.openidentityexchange.org/RDVPalBVjOOF9xBT6XgVbLQ> ?p ?o ; rdfs:label ?eventLabel .
 
+  ?o rdfs:label ?oLabel .
+  ?p rdfs:label ?pLabel .
+  
+  # then where the property is refering to a Proof proceed to validate it...
+} 
+LIMIT 10
+
+~~~~
+
+## Validating the Proofs
+
+### W3C Verifiable Credential
+
+~~~~
+
+~~~~
+
+### OIX Verifiable Event
+
+~~~~
 
 ~~~~
