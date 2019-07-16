@@ -99,6 +99,7 @@ SELECT  ?evidence ?evidenceLabel ?VerifiableCredentialType  WHERE {
 LIMIT 10
 
 ~~~~
+<a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20mdmp%3A%20%3Chttps%3A%2F%2Fontology.openidentityexchange.org%2Friskmodel%23%3E%0APREFIX%20oix%3A%20%3Chttps%3A%2F%2Fwww.openidentityexchange.org%2F%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0A%0A%0ASELECT%20%20%3Fevidence%20%3FevidenceLabel%20%3FVerifiableCredentialType%20%20WHERE%20%7B%0A%20%20%0A%20%20%23%20get%20the%20relationships%20we%20want%20to%20use%20from%20the%20Ontology%0A%20%20%23%20get%20the%20relationship%28s%29%20known%20as%20%27hasEvidence%27%0A%20%20%3FhasEvidence%20rdfs%3Alabel%20%27hasEvidence%27%20.%0A%20%20%3FVerifiableCredentialType%20rdfs%3Alabel%20%27AlumniCredential%27%20.%0A%20%20%0A%20%20%23%20Subject%20of%20the%20test%20is%20the%20claimed%20identity%20for%20Boris%20Johnson%0A%20%20%3Chttp%3A%2F%2Fwebprotege.stanford.edu%2FR9gwlbOvPSN884Pt9CnGl7J%3E%20%3FhasEvidence%20%3Fevidence%20.%0A%0A%20%20%23%20Get%20the%20evidence%20of%20type%20AlumniCredential%0A%20%20%3Fevidence%20rdf%3Atype%20%3FVerifiableCredentialType%20.%0A%20%20%0A%20%20%3Fevidence%20rdfs%3Alabel%20%3FevidenceLabel%0A%7D%20%0ALIMIT%2010"> Execute Query</a>
 
 ### Get the W3C Verifiable Credential Id and Issuance Date 
 
