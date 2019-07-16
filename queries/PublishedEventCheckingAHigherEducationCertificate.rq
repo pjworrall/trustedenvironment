@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX mdmp: <https://ontology.openidentityexchange.org/riskmodel#>
+PREFIX oix: <https://www.openidentityexchange.org/>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+
+SELECT ?eventLabel ?pLabel  ?oLabel  WHERE {
+  
+  # a known check event, a URI shared by the Claiment in a Self-Sovereign solution
+  # note: the Claiments ownership of the 
+  
+  <https://www.openidentityexchange.org/RDVPalBVjOOF9xBT6XgVbLQ> ?p ?o ; rdfs:label ?eventLabel .
+
+  ?o rdfs:label ?oLabel .
+  ?p rdfs:label ?pLabel .
+  
+  # then where the property is refering to a Proof proceed to validate it...
+} 
+LIMIT 10
+
+
