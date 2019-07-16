@@ -132,7 +132,7 @@ LIMIT 10
 
 ~~~~
 
-### Add Name of Credential Issuer
+### Get the W3C Verifiable Credential Id, Issuance Date and Name of Credential Issuer
 
 ~~~~
 
@@ -167,5 +167,17 @@ SELECT ?evidenceLabel ?subjectLabel ?issuerLabel ?id ?issuanceDate   WHERE {
   ?issuer rdfs:label ?issuerLabel .
 } 
 LIMIT 10
+
+~~~~
+
+## Querying Events
+
+### Inspect an Event published by a Resource Provider that Checked a Higher Education Certificate
+
+We would like to know who the Resource Provider was, when the check was done and the signature to verify the event was published by the Resource Provider.
+
+~~~~
+
+
 
 ~~~~
