@@ -193,3 +193,17 @@ SELECT ?eventLabel ?pLabel  ?oLabel  WHERE {
 LIMIT 10
 
 ~~~~
+
+## Validating the Proofs
+
+### W3C Verifiable Credential
+
+~~~~
+
+~~~~
+
+### OIX Verifiable Event
+
+~~~~
+
+~~~~
