@@ -1,0 +1,23 @@
+{
+  "name": "oix.trusted.environment",
+  "version": "0.0.1",
+  "description": "Ontology and test code for the OIX Trusted Environment Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjworrall/trustedenvironment.git"
+  },
+  "author": "Paul Worrall <paul.worrall@interition.net> (https://uk.linkedin.com/in/worrall)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pjworrall/trustedenvironment/issues"
+  },
+  "homepage": "https://github.com/pjworrall/trustedenvironment#readme",
+  "dependencies": {
+    "rdflib": "^0.20.1",
+    "rdfstore": "^0.9.17"
+  }
+}
