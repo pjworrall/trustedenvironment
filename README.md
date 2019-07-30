@@ -43,6 +43,8 @@ PREFIX oix: <https://www.openidentityexchange.org/>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 ~~~~
 
+(###anchors-in-markdown))
+
 ## Queries
 
 ### Report all the types of things
