@@ -45,7 +45,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
 ## <a id=queries></a>Queries
 
-### Report all the types of things
+### <a id=types-of-things></a>Report all the types of things
 
 ~~~~
 SELECT ?concept ?description WHERE { 
@@ -56,7 +56,7 @@ SELECT ?concept ?description WHERE {
 
 <a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20mdmp%3A%20%3Chttps%3A%2F%2Fontology.openidentityexchange.org%2Friskmodel%23%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0APREFIX%20oix%3A%20%3Chttps%3A%2F%2Fwww.openidentityexchange.org%2F%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0ASELECT%20%3Fconcept%20%3Fdescription%20WHERE%20%7B%20%0A%20%20%3Fs%20a%20owl%3AClass%20%3B%20rdfs%3Alabel%20%3Fconcept%20.%0A%20%20optional%20%7B%20%3Fs%20dc%3Adescription%20%3Fdescription%20.%20%20%7D%0A%7D%20">Execute Query</a>
 
-### Report all the properties/relationships that refer to things
+### <a id=relationships-to-things></a>Report all the properties/relationships that refer to things
 
 ~~~~
 SELECT ?concept ?description WHERE { 
@@ -66,7 +66,7 @@ SELECT ?concept ?description WHERE {
 ~~~~
 <a target="_blank" href="https://fuseki.interition.info/OIXTrustedEnvironment?query=PREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX%20mdmp%3A%20%3Chttps%3A%2F%2Fontology.openidentityexchange.org%2Friskmodel%23%3E%0APREFIX%20dc%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0APREFIX%20oix%3A%20%3Chttps%3A%2F%2Fwww.openidentityexchange.org%2F%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0ASELECT%20%3Fconcept%20%3Fdescription%20WHERE%20%7B%20%0A%20%20%3Fs%20a%20owl%3AObjectProperty%20%3B%20rdfs%3Alabel%20%3Fconcept%20.%20%0A%20%20optional%20%7B%20%3Fs%20dc%3Adescription%20%3Fdescription%20.%20%20%7D%0A%7D%20">Execute Query</a>
 
-### List all the properties that refer to data
+### <a id=relationships-to-data></a>List all the properties that refer to data
 ~~~~
 SELECT ?concept ?description WHERE {
   ?s a owl:DatatypeProperty ; rdfs:label ?concept .
