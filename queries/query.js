@@ -14,11 +14,15 @@ function outputSPARQLResults(results) {
 
 // Create an rdfstore
 let rdfstore = require('rdfstore');
+let fs = require('fs');
 
 // Define a query to execute.
 
-let varListContents = 'SELECT ?s ?o ?p \
-        FROM <g1> WHERE { ?s ?o ?p } ' ;
+let query = "";
+
+fs.readFile('WasABiometricCheckMadeByAQualifiedIndividualInG1.rq', 'utf8', function(err, contents) {
+    query = contents;
+});
 
 
 rdfstore.create(function(err, store) {   // no error handling
@@ -39,7 +43,7 @@ rdfstore.create(function(err, store) {   // no error handling
                 store.setPrefix('dc','http://purl.org/dc/elements/1.1/');
 
 
-                store.execute(varListContents, function(err, results) {
+                store.execute(query, function(err, results) {
                     console.log("=== TRIPLES ===");
                     outputSPARQLResults(results)
                 })

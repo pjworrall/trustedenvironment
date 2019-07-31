@@ -383,7 +383,7 @@
 ###  http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW
 <http://webprotege.stanford.edu/RCKqpoWg3uOn2xnrLlfcdVW> rdf:type owl:Class ;
                                                          rdfs:subClassOf <http://webprotege.stanford.edu/R7UCUG2sJU7XokOVwArrHIN> ;
-                                                         rdfs:label "ChangeOfAddress" .
+                                                         rdfs:label "ChangeOfContactAddress"^^xsd:string .
 
 
 ###  http://webprotege.stanford.edu/RCUKiBquQNp9pqpxax6wyYR
@@ -492,7 +492,7 @@
 
 ###  http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8
 <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> rdf:type owl:Class ;
-                                                              <http://purl.org/dc/elements/1.1/description> "A primary contact address (residential?)"^^xsd:string ;
+                                                              <http://purl.org/dc/elements/1.1/description> "A location"^^xsd:string ;
                                                               rdfs:label "Address" .
 
 
@@ -629,6 +629,20 @@
                                                                rdfs:label "PowerOfAttorney" .
 
 
+###  https://www.openidentityexchange.org/RB7GgpfAnaqEnhHjwcZVtUP
+<https://www.openidentityexchange.org/RB7GgpfAnaqEnhHjwcZVtUP> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "A location where deliveries are received"^^xsd:string ;
+                                                               rdfs:label "DeliveryAddress" .
+
+
+###  https://www.openidentityexchange.org/RB9FFLapF2fdOZLvDb4s1Rn
+<https://www.openidentityexchange.org/RB9FFLapF2fdOZLvDb4s1Rn> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "A location where someone resides most of the time"^^xsd:string ;
+                                                               rdfs:label "ResidentialAddress" .
+
+
 ###  https://www.openidentityexchange.org/RBGUeUmTXnCl2jkyVQJNQsT
 <https://www.openidentityexchange.org/RBGUeUmTXnCl2jkyVQJNQsT> rdf:type owl:Class ;
                                                                rdfs:subClassOf <http://webprotege.stanford.edu/RCvWKQabo8f6AzfNihe7f8F> ;
@@ -659,6 +673,13 @@
 <https://www.openidentityexchange.org/RC8roUG5oGoQPIYge1NS5wg> rdf:type owl:Class ;
                                                                rdfs:subClassOf <http://webprotege.stanford.edu/R8vArr0w5L6XD2URCdkeUSe> ;
                                                                rdfs:label "GasBoilerService" .
+
+
+###  https://www.openidentityexchange.org/RCWMd9AsDPvbzLa2B9FMZge
+<https://www.openidentityexchange.org/RCWMd9AsDPvbzLa2B9FMZge> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://www.openidentityexchange.org/R7ZCwYxHWb4Qyxf1dfjuyk8> ;
+                                                               <http://purl.org/dc/elements/1.1/description> "An address where written correspondence should be sent"^^xsd:string ;
+                                                               rdfs:label "CorrespondenceAddress"^^xsd:string .
 
 
 ###  https://www.openidentityexchange.org/RDL5RelhU3EUDX17Fhmcycl
@@ -881,6 +902,7 @@
                                                                <https://www.openidentityexchange.org/RB6rBGeEIHAeDvaDgN79gkQ> <https://www.openidentityexchange.org/RCwq7Ew8GFyqXrPl9JYu6BG> ;
                                                                <https://www.openidentityexchange.org/RColAulYqUGmGH1zRmnpNls> <https://www.openidentityexchange.org/RDTfCorDbWL7ZlFQX7g6Ovo> ;
                                                                <https://www.openidentityexchange.org/RPEZ4g4Q2EtkS20gPiB64J> "2019-10-24T05:33:31Z"^^xsd:dateTime ;
+                                                               <http://purl.org/dc/elements/1.1/description> "This is a check event. It uses the same 'proof' mechanism as W3C Verifiable Credentials. It also refers to the evidence which will also have a proof in this case because IT IS a W3C Verififable Credential. The main omission from this is PROOF the claimant is the Individual the evidence refers to!!!"^^xsd:string ;
                                                                rdfs:label "A check of Boris Johnsons Higher Education Certificate" .
 
 
